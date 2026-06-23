@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 08 - Flight Seat Selection</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/booking.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Choose your seats</h1>
+    </header>
+
+    <main>
+      <!--Put your code here-->
+      <div class="cabin">
+        <div class="plane">
+          <img
+            class="plane-bg"
+            src="img/plane-bg.png"
+            alt="Aircraft top view"
+          />
+
+          <div class="seats">
+            <!-- Row 1 (Premium £15) -->
+            <button
+              class="seat"
+              type="button"
+              data-row="1"
+              data-pos="A"
+              data-price="15"
+            >
+              1A
+            </button>
+            <button
+              class="seat sold"
+              type="button"
+              data-row="1"
+              data-pos="B"
+              data-price="15"
+            >
+              1B
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="1"
+              data-pos="C"
+              data-price="15"
+            >
+              1C
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="1"
+              data-pos="D"
+              data-price="15"
+            >
+              1D
+            </button>
+
+            <!-- Row 2 (Premium £15) - sold pair A+B -->
+            <button
+              class="seat sold"
+              type="button"
+              data-row="2"
+              data-pos="A"
+              data-price="15"
+            >
+              2A
+            </button>
+            <button
+              class="seat sold"
+              type="button"
+              data-row="2"
+              data-pos="B"
+              data-price="15"
+            >
+              2B
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="2"
+              data-pos="C"
+              data-price="15"
+            >
+              2C
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="2"
+              data-pos="D"
+              data-price="15"
+            >
+              2D
+            </button>
+
+            <!-- Row 3 (Premium £15) -->
+            <button
+              class="seat"
+              type="button"
+              data-row="3"
+              data-pos="A"
+              data-price="15"
+            >
+              3A
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="3"
+              data-pos="B"
+              data-price="15"
+            >
+              3B
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="3"
+              data-pos="C"
+              data-price="15"
+            >
+              3C
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="3"
+              data-pos="D"
+              data-price="15"
+            >
+              3D
+            </button>
+
+            <!-- Row 4 (Standard £10) - sold pair C+D -->
+            <button
+              class="seat"
+              type="button"
+              data-row="4"
+              data-pos="A"
+              data-price="10"
+            >
+              4A
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="4"
+              data-pos="B"
+              data-price="10"
+            >
+              4B
+            </button>
+            <button
+              class="seat sold"
+              type="button"
+              data-row="4"
+              data-pos="C"
+              data-price="10"
+            >
+              4C
+            </button>
+            <button
+              class="seat sold"
+              type="button"
+              data-row="4"
+              data-pos="D"
+              data-price="10"
+            >
+              4D
+            </button>
+
+            <!-- Row 5 (Standard £10) -->
+            <button
+              class="seat"
+              type="button"
+              data-row="5"
+              data-pos="A"
+              data-price="10"
+            >
+              5A
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="5"
+              data-pos="B"
+              data-price="10"
+            >
+              5B
+            </button>
+            <button
+              class="seat sold"
+              type="button"
+              data-row="5"
+              data-pos="C"
+              data-price="10"
+            >
+              5C
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="5"
+              data-pos="D"
+              data-price="10"
+            >
+              5D
+            </button>
+
+            <!-- Row 6 (Standard £10) -->
+            <button
+              class="seat"
+              type="button"
+              data-row="6"
+              data-pos="A"
+              data-price="10"
+            >
+              6A
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="6"
+              data-pos="B"
+              data-price="10"
+            >
+              6B
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="6"
+              data-pos="C"
+              data-price="10"
+            >
+              6C
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="6"
+              data-pos="D"
+              data-price="10"
+            >
+              6D
+            </button>
+
+            <!-- Row 7 (Standard £10) - sold pair C+D -->
+            <button
+              class="seat"
+              type="button"
+              data-row="7"
+              data-pos="A"
+              data-price="10"
+            >
+              7A
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="7"
+              data-pos="B"
+              data-price="10"
+            >
+              7B
+            </button>
+            <button
+              class="seat sold"
+              type="button"
+              data-row="7"
+              data-pos="C"
+              data-price="10"
+            >
+              7C
+            </button>
+            <button
+              class="seat sold"
+              type="button"
+              data-row="7"
+              data-pos="D"
+              data-price="10"
+            >
+              7D
+            </button>
+
+            <!-- Row 8 (Standard £10) -->
+            <button
+              class="seat sold"
+              type="button"
+              data-row="8"
+              data-pos="A"
+              data-price="10"
+            >
+              8A
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="8"
+              data-pos="B"
+              data-price="10"
+            >
+              8B
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="8"
+              data-pos="C"
+              data-price="10"
+            >
+              8C
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="8"
+              data-pos="D"
+              data-price="10"
+            >
+              8D
+            </button>
+
+            <!-- Row 9 (Standard £10) -->
+            <button
+              class="seat"
+              type="button"
+              data-row="9"
+              data-pos="A"
+              data-price="10"
+            >
+              9A
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="9"
+              data-pos="B"
+              data-price="10"
+            >
+              9B
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="9"
+              data-pos="C"
+              data-price="10"
+            >
+              9C
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="9"
+              data-pos="D"
+              data-price="10"
+            >
+              9D
+            </button>
+
+            <!-- Row 10 (Standard £10) -->
+            <button
+              class="seat"
+              type="button"
+              data-row="10"
+              data-pos="A"
+              data-price="10"
+            >
+              10A
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="10"
+              data-pos="B"
+              data-price="10"
+            >
+              10B
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="10"
+              data-pos="C"
+              data-price="10"
+            >
+              10C
+            </button>
+            <button
+              class="seat sold"
+              type="button"
+              data-row="10"
+              data-pos="D"
+              data-price="10"
+            >
+              10D
+            </button>
+
+            <!-- Row 11 (Saver £6) - sold pair A+B -->
+            <button
+              class="seat sold"
+              type="button"
+              data-row="11"
+              data-pos="A"
+              data-price="6"
+            >
+              11A
+            </button>
+            <button
+              class="seat sold"
+              type="button"
+              data-row="11"
+              data-pos="B"
+              data-price="6"
+            >
+              11B
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="11"
+              data-pos="C"
+              data-price="6"
+            >
+              11C
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="11"
+              data-pos="D"
+              data-price="6"
+            >
+              11D
+            </button>
+
+            <!-- Row 12 (Saver £6) -->
+            <button
+              class="seat"
+              type="button"
+              data-row="12"
+              data-pos="A"
+              data-price="6"
+            >
+              12A
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="12"
+              data-pos="B"
+              data-price="6"
+            >
+              12B
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="12"
+              data-pos="C"
+              data-price="6"
+            >
+              12C
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="12"
+              data-pos="D"
+              data-price="6"
+            >
+              12D
+            </button>
+
+            <!-- Row 13 (Saver £6) - sold pair C+D -->
+            <button
+              class="seat"
+              type="button"
+              data-row="13"
+              data-pos="A"
+              data-price="6"
+            >
+              13A
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="13"
+              data-pos="B"
+              data-price="6"
+            >
+              13B
+            </button>
+            <button
+              class="seat sold"
+              type="button"
+              data-row="13"
+              data-pos="C"
+              data-price="6"
+            >
+              13C
+            </button>
+            <button
+              class="seat sold"
+              type="button"
+              data-row="13"
+              data-pos="D"
+              data-price="6"
+            >
+              13D
+            </button>
+
+            <!-- Row 14 (Saver £6) -->
+            <button
+              class="seat sold"
+              type="button"
+              data-row="14"
+              data-pos="A"
+              data-price="6"
+            >
+              14A
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="14"
+              data-pos="B"
+              data-price="6"
+            >
+              14B
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="14"
+              data-pos="C"
+              data-price="6"
+            >
+              14C
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="14"
+              data-pos="D"
+              data-price="6"
+            >
+              14D
+            </button>
+
+            <!-- Row 15 (Saver £6) -->
+            <button
+              class="seat"
+              type="button"
+              data-row="15"
+              data-pos="A"
+              data-price="6"
+            >
+              15A
+            </button>
+            <button
+              class="seat sold"
+              type="button"
+              data-row="15"
+              data-pos="B"
+              data-price="6"
+            >
+              15B
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="15"
+              data-pos="C"
+              data-price="6"
+            >
+              15C
+            </button>
+            <button
+              class="seat"
+              type="button"
+              data-row="15"
+              data-pos="D"
+              data-price="6"
+            >
+              15D
+            </button>
+          </div>
+        </div>
+
+        <div class="legend">
+          <span class="legend-item">
+            <span class="swatch swatch-available"></span>
+            Available
+          </span>
+          <span class="legend-item">
+            <span class="swatch swatch-selected"></span>
+            Selected
+          </span>
+          <span class="legend-item">
+            <span class="swatch swatch-sold"></span>
+            Sold
+          </span>
+          <span class="legend-prices">
+            Rows 1–3 £15 · Rows 4–10 £10 · Rows 11–15 £6
+          </span>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-value" id="selectedCount">0</span>
+            <span class="stat-label">selected</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" id="totalPrice">£0</span>
+            <span class="stat-label">total</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" id="mostExpensive">—</span>
+            <span class="stat-label">highest fare</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Do not modify any code after this line-->
+    <footer id="dynamicFooter"></footer>
+    <script>
+      document.getElementById('dynamicFooter').innerHTML =
+        '&copy; ' +
+        new Date().getFullYear() +
+        ' WorldSkills | All rights reserved.';
+    </script>
+  </body>
+</html>

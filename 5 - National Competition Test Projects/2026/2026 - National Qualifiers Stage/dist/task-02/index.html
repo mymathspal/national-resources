@@ -1,0 +1,124 @@
+<!doctype html>
+<!--Do not modify any code after this line-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 02 - SQL Revenue by Country</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- sql.js (asm.js build, no .wasm fetch needed - works on file://) -->
+    <script src="lib/sql.js/sql-asm.js" defer></script>
+    <script src="js/data.js" defer></script>
+    <script src="js/expected.js" defer></script>
+    <script src="query.js" defer></script>
+    <script src="js/runner.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>SQL Revenue by Country</h1>
+    </header>
+
+    <main>
+      <div class="top-row">
+        <section class="panel">
+          <h2 class="panel-title">Schema</h2>
+          <div class="schema-body">
+            <img
+              class="schema-erd"
+              src="lib/task-02-erd.jpg"
+              alt="Südwest database schema — entity relationship diagram"
+            />
+            <p class="enum-note">
+              <strong>booking_status ENUM</strong>
+              values:
+              <code>completed</code>
+              ·
+              <code>pending</code>
+              ·
+              <code>cancelled</code>
+            </p>
+            <p class="enum-note">
+              <strong>fare_category ENUM</strong>
+              values:
+              <code>Seats</code>
+              ·
+              <code>Baggage</code>
+              ·
+              <code>Lounge</code>
+              ·
+              <code>Meals</code>
+            </p>
+            <p class="enum-note">
+              <strong>booking_date</strong>
+              stored as
+              <code>YYYY-MM-DD</code>
+              text.
+            </p>
+          </div>
+        </section>
+
+        <section class="panel editor-panel">
+          <h2 class="panel-title">SQL editor</h2>
+          <div class="editor-body">
+            <textarea
+              id="sqlEditor"
+              class="sql-editor"
+              spellcheck="false"
+              autocomplete="off"
+              placeholder="-- type your SELECT statement here…"
+            ></textarea>
+            <div class="editor-actions">
+              <span id="verdict" class="badge idle">Ready</span>
+              <button type="button" id="saveBtn" class="primary-button">
+                Save SQL
+              </button>
+              <button type="button" id="resetBtn" class="ghost-button">
+                Reset
+              </button>
+            </div>
+            <p class="hint">
+              Your query runs live as you type. Click
+              <strong>Save SQL</strong>
+              to write
+              <code>result.sql</code>
+              into the
+              <code>result/</code>
+              folder — that file is your submission, regardless of whether the
+              query passes or fails. The first time you click Save your browser
+              will ask you to grant access to the
+              <code>result/</code>
+              folder; after that, saves are one-click.
+            </p>
+            <p id="saveStatus" class="save-status" hidden></p>
+            <div id="error" class="error"></div>
+          </div>
+        </section>
+      </div>
+
+      <section class="panel">
+        <h2 class="panel-title">Result comparison</h2>
+        <div class="tables-grid">
+          <div class="table-block">
+            <h3 class="section-title">Your result</h3>
+            <div id="actualTable"></div>
+          </div>
+          <div class="table-block">
+            <h3 class="section-title">Expected</h3>
+            <div id="expectedTable"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Do not modify any code after this line-->
+    <footer id="dynamicFooter"></footer>
+    <script>
+      document.getElementById('dynamicFooter').innerHTML =
+        '&copy; ' +
+        new Date().getFullYear() +
+        ' WorldSkills | All rights reserved.';
+    </script>
+  </body>
+</html>

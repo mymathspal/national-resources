@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 04 - Flight Load Bars</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Today's Flight Load</h1>
+    </header>
+
+    <main>
+      <!--Put your code here-->
+      <div class="flights">
+        <div class="flight" style="--p: 92%">
+          <div class="flight-label">
+            <span class="flight-route">STR → FRA · Frankfurt</span>
+            <span class="load-percent">92%</span>
+          </div>
+          <div class="load-track"><div class="load-fill"></div></div>
+        </div>
+        <div class="flight" style="--p: 78%">
+          <div class="flight-label">
+            <span class="flight-route">STR → MUC · Munich</span>
+            <span class="load-percent">78%</span>
+          </div>
+          <div class="load-track"><div class="load-fill"></div></div>
+        </div>
+        <div class="flight" style="--p: 65%">
+          <div class="flight-label">
+            <span class="flight-route">STR → BER · Berlin</span>
+            <span class="load-percent">65%</span>
+          </div>
+          <div class="load-track"><div class="load-fill"></div></div>
+        </div>
+        <div class="flight" style="--p: 45%">
+          <div class="flight-label">
+            <span class="flight-route">STR → ZRH · Zurich</span>
+            <span class="load-percent">45%</span>
+          </div>
+          <div class="load-track"><div class="load-fill"></div></div>
+        </div>
+      </div>
+    </main>
+    <!--Do not modify any code after this line-->
+    <footer id="dynamicFooter"></footer>
+    <script>
+      document.getElementById('dynamicFooter').innerHTML =
+        '&copy; ' +
+        new Date().getFullYear() +
+        ' WorldSkills | All rights reserved.';
+    </script>
+  </body>
+</html>

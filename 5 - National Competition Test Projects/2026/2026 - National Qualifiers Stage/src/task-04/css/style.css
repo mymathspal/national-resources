@@ -1,0 +1,100 @@
+/*CSS*/
+body,
+h1,
+header,
+main,
+footer,
+div {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+header {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+main {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
+  margin: 0 auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+#copyrightYear {
+  font-weight: bold;
+}
+
+/* ---------- Task framework styles (do not modify) ---------- */
+
+.flights {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+@media (max-width: 540px) {
+  .flights {
+    width: 92vw;
+  }
+}
+
+/*DO NOT MODIFY ANY CODE ABOVE*/
+/*PUT YOUR CSS CODE FROM THIS POINT ONWARD*/
+
+.flight-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.92rem;
+  color: #374151;
+  margin-bottom: 0.35rem;
+}
+
+.flight-route {
+  font-weight: 700;
+}
+
+.load-percent {
+  color: #6366f1;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.load-track {
+  height: 12px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.load-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  border-radius: 999px;
+  animation: loadFill 1.4s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+
+@keyframes loadFill {
+  to {
+    width: var(--p);
+  }
+}

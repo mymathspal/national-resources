@@ -1,0 +1,55 @@
+<!doctype html>
+<!--Do not modify any code after this line-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 03 - Destination Search</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/search.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Where to?</h1>
+    </header>
+
+    <main>
+      <div class="search">
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Search destinations…"
+          autocomplete="off"
+        />
+        <p id="noResults" class="no-results" hidden>No matches found.</p>
+        <ul id="destinationList" class="destination-list">
+          <li data-name="Amsterdam">Amsterdam</li>
+          <li data-name="Barcelona">Barcelona</li>
+          <li data-name="Berlin">Berlin</li>
+          <li data-name="Brussels">Brussels</li>
+          <li data-name="Copenhagen">Copenhagen</li>
+          <li data-name="Frankfurt">Frankfurt</li>
+          <li data-name="Geneva">Geneva</li>
+          <li data-name="Helsinki">Helsinki</li>
+          <li data-name="Lisbon">Lisbon</li>
+          <li data-name="Madrid">Madrid</li>
+          <li data-name="Milan">Milan</li>
+          <li data-name="Munich">Munich</li>
+          <li data-name="Paris">Paris</li>
+          <li data-name="Prague">Prague</li>
+          <li data-name="Vienna">Vienna</li>
+          <li data-name="Zurich">Zurich</li>
+        </ul>
+      </div>
+    </main>
+    <!--Do not modify any code after this line-->
+    <footer id="dynamicFooter"></footer>
+    <script>
+      document.getElementById('dynamicFooter').innerHTML =
+        '&copy; ' +
+        new Date().getFullYear() +
+        ' WorldSkills | All rights reserved.';
+    </script>
+  </body>
+</html>

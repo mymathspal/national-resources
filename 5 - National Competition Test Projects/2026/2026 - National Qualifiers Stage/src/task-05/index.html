@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 05 - Flight Review</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/counter.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Write a flight review</h1>
+    </header>
+
+    <main>
+      <!--Put your code here-->
+      <div class="counter">
+        <textarea
+          id="review"
+          rows="6"
+          placeholder="Tell us about your flight…"
+        ></textarea>
+        <div class="stats">
+          <div class="stat">
+            <span class="value" id="charCount">0</span>
+            <span class="label">characters</span>
+          </div>
+          <div class="stat">
+            <span class="value" id="wordCount">0</span>
+            <span class="label">words</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Do not modify any code after this line-->
+    <footer id="dynamicFooter"></footer>
+    <script>
+      document.getElementById('dynamicFooter').innerHTML =
+        '&copy; ' +
+        new Date().getFullYear() +
+        ' WorldSkills | All rights reserved.';
+    </script>
+  </body>
+</html>

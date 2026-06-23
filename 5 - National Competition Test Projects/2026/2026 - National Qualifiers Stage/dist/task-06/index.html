@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 06 - Flight Rating</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/rating.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Rate your flight</h1>
+    </header>
+
+    <main>
+      <!--Put your code here-->
+      <div class="rating">
+        <div
+          class="stars"
+          id="stars"
+          role="radiogroup"
+          aria-label="Flight rating"
+        >
+          <button class="star" type="button" data-value="1" aria-label="1 star">
+            ★
+          </button>
+          <button
+            class="star"
+            type="button"
+            data-value="2"
+            aria-label="2 stars"
+          >
+            ★
+          </button>
+          <button
+            class="star"
+            type="button"
+            data-value="3"
+            aria-label="3 stars"
+          >
+            ★
+          </button>
+          <button
+            class="star"
+            type="button"
+            data-value="4"
+            aria-label="4 stars"
+          >
+            ★
+          </button>
+          <button
+            class="star"
+            type="button"
+            data-value="5"
+            aria-label="5 stars"
+          >
+            ★
+          </button>
+        </div>
+        <p class="rating-label" id="ratingLabel">0 / 5</p>
+      </div>
+    </main>
+    <!--Do not modify any code after this line-->
+    <footer id="dynamicFooter"></footer>
+    <script>
+      document.getElementById('dynamicFooter').innerHTML =
+        '&copy; ' +
+        new Date().getFullYear() +
+        ' WorldSkills | All rights reserved.';
+    </script>
+  </body>
+</html>
